@@ -1,1 +1,1 @@
-web: gunicorn CCMS.wsgi --log-file -
+web gunicorn Israksite.wsgi:application --log-file -
