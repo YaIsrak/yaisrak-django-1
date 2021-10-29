@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+
+<!-- Title -->
+{% block home-name %}
+
+<title>Israk - home</title>
+
+{% endblock %}
+
+<!-- Main Content -->
+{% block cnt %}
+
+<div class="container">
+    {% for pc in pics %}
+        <hr>
+        <hr>
+        <img class="img-fluid" src={{ pc.image_url }} alt="">
+        <h1> {{ pc.name }} </h1>
+    {% endfor %}
+</div>
+
+{% endblock %}
