@@ -1,1 +1,1 @@
-web: gunicorn Israksite.wsgi:app --log-file -
+web: gunicorn Israksite.wsgi
