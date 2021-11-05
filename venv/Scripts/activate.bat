@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=E:\yaser arafat israk\1x\Python\Israk.com\venv
+set VIRTUAL_ENV=E:\yaser arafat israk\1x\Github\yaisrak-django-1\venv
 
 if not defined PROMPT set PROMPT=$P$G
 

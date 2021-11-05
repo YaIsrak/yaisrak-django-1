@@ -1,4 +1,4 @@
-#!e:\yaser arafat israk\1x\python\israk.com\venv\scripts\python.exe
+#!e:\yaser arafat israk\1x\github\yaisrak-django-1\venv\scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 

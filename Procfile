@@ -1,1 +1,0 @@
-web: gunicorn Israksite.wsgi

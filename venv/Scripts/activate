@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="E:\yaser arafat israk\1x\Python\Israk.com\venv"
+VIRTUAL_ENV="E:\yaser arafat israk\1x\Github\yaisrak-django-1\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

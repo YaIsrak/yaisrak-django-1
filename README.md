@@ -1,1 +1,0 @@
-# yaisrak-django-1
