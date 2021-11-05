@@ -1,1 +1,1 @@
-web: gunicorn Israk.wsgi.py 
+web: gunicorn Israk.wsgi.py
