@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'kiona';
+  src: url("../font/Kiona-Bold.ttf");
+}
+
+* {
+  font-family: "kiona";
+}
+
+.navbar {
+  font-family: 'kiona';
+}
+
+.navbar .container .navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link {
+  font-family: "kiona";
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  position: relative;
+  margin: 0 0.5rem;
+  font-size: 0.9rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
+  color: #0e0e0e;
+  letter-spacing: 0.3rem;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+  height: 00%;
+  width: 120%;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  z-index: -1;
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover::after {
+  background-color: #0e0e0e;
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+}
+
+.navbar .container .navbar-collapse .navbar-nav .nav-item .nav-link:hover::before {
+  height: 130%;
+}
+/*# sourceMappingURL=nav.css.map */

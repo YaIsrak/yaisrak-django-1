@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: 'kiona';
+  src: url("../font/Kiona-Bold.ttf");
+}
+
+* {
+  font-family: "kiona";
+}
+
+header, section {
+  padding: 15vmin;
+}
+
+.sec-01 {
+  background-image: url(../photos/cover-1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.sec-01 .black-cover {
+  background: #0e0e0e;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 100vh;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.sec-01 .intro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 6vmin;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.sec-01 .intro h1 {
+  letter-spacing: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.sec-01 .intro h1:hover {
+  letter-spacing: 0.4rem;
+}
+/*# sourceMappingURL=home.css.map */

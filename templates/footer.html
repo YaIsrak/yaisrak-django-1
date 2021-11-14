@@ -1,0 +1,35 @@
+<footer class="">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1 class="">ISRAK</h1>
+        <ul class="navbar-nav">
+          {% for nav in navs %}
+          <li class="nav-item">
+            <a href="{{nav.url}}" class="nav-link"> {{nav.name}} </a>
+          </li>
+          {% endfor %}
+          <li class="nav-item">
+            <a href="" class="nav-link"
+              >yaserarafatisrak@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="social-link ">
+          <div class="">
+            {% for socl in socls %}
+            <button class="btn btn-light">
+              <a href="" class="link-dark">
+                <i class="{{socl.icon}}"></i>
+              </a>
+            </button>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="text-center">Copyright ©2021 Israk . All rights reserved.</p>
+  </div>
+</footer>

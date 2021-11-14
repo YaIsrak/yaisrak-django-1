@@ -1,0 +1,35 @@
+@import '../css/main.scss';
+
+header, section{
+    padding: 15vmin;
+}
+
+.sec-01{
+    background-image: url(../photos/cover-1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    .black-cover{
+        background: $dark;
+        position: absolute;
+        @include position(absolute, 50%, 50%, -50%, -50%);
+        height: 100vh;
+        width: 100%;
+        opacity: 0.8;
+    }
+    .intro{
+        @include position(absolute, 50%, 50%, -50%, -50%);
+        font-size: 6vmin;
+        text-align: center;
+        text-transform: uppercase;
+        h1{
+            letter-spacing: 0;
+            transition: $transition;
+            &:hover{
+                letter-spacing: 0.4rem;
+            }
+        }
+    }
+    
+}
