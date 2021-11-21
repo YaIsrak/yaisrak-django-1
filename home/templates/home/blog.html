@@ -1,0 +1,63 @@
+{% extends 'main.html' %} {% block title %} | Blog{% endblock %} {% block css %}
+<!-- <link rel="stylesheet" href="../../../static/home_css/home.css"> -->
+<style>
+  section {
+    padding: 15vmin 0;
+  }
+</style>
+{% endblock %}
+
+<!-- Html -->
+{% block content %}
+<section class="bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="accordion col-9" id="accordionExample">
+          <h5 class="text-white">{{blog_count}} Blog are avaliable</h5>
+        {% for blog in blogs %}
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="header{{blog.IDname}}">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapse{{blog.IDname}}"
+              aria-expanded="true"
+              aria-controls="collapse{{blog.IDname}}"
+            >
+              #{{blog.id}} -- {{blog.name}}
+            </button>
+            <div class="px-3 h6 text-muted blog-info">
+              <h6 class="badge bg-success">{{blog.topic}}</h6>
+              <br />
+              Created On {{blog.created}} and Updated on {{blog.updated}}
+            </div>
+          </h2>
+          <div
+            id="collapse{{blog.IDname}}"
+            class="accordion-collapse collapse"
+            aria-labelledby="heading{{blog.IDname}}"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              {{blog.description}}
+              <img class="img-fluid" src="{{blog.image}}" alt="" />
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+      <div class="col-3">
+        <ul class="list-group">
+            {% for topic in topics %}
+            <li class="list-group-item">
+                {{topic.name}}
+            </li>
+            {% endfor %}
+        </ul>
+          
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

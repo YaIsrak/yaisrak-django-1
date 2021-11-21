@@ -1,0 +1,26 @@
+@import '../css/main.scss';
+
+header, section{
+    padding: 15vmin 0;
+}
+
+
+// main
+header{
+    background-image: url('https://scontent.fdac33-1.fna.fbcdn.net/v/t1.6435-9/151266482_1039123209917902_3306857070599264157_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=19026a&_nc_eui2=AeGol91jE1PlwXBjlDH_E7bcHZT0CKyJmh0dlPQIrImaHfe6orRcqwpZ21EP6hOLD6dv_nv1f3eKOF19xN-6FELn&_nc_ohc=4AoDvSVpgOoAX_8Fe1H&tn=E17wCZDpdaBy50yL&_nc_ht=scontent.fdac33-1.fna&oh=ecbe6f8a774a20f270bb34922e6a5b48&oe=61BC7EE3');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .info{
+        padding: 2rem;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        border-radius: 10px;
+    }
+}
+
+.sec-02{
+    .row{
+        padding: 5vmin 0;
+    }
+}

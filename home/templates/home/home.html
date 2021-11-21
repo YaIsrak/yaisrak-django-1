@@ -6,10 +6,47 @@
 {% endblock %}
 
 {% block content %}
+<!-- section 2 -->
 <header class="sec-01 text-white" id="home">
     <div class="black-cover"></div>
     <div class="container intro">
         <h1>MD Yaser Arafat Israk</h1>
     </div>
 </header>
+
+<!-- section 2 -->
+<section class="sec-02 bg-dark text-white">
+    <div class="container">
+        <h1 class="header_title text-center">Porfolio</h1>
+        <div class="row">
+            <div class="col-6">
+                <div class="center">
+                    <h2>Digital art</h2>
+                    <p>I like to draw dynamic and traditional characters, which is sometimes gives me more inspiration. I begin pursuing art more seriously at 16. I enjoy learning new things. My force is drawing female characters, traditional concept art and portrait.</p>
+                    <ul>
+                        {% for art_link in art_links %}
+                        <li class="link-hover py-1">
+                            <a 
+                                href="{{art_link.link}}" class="link-light"
+                            >
+                                {{art_link.name}}
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    {% for art_photo in art_photos %}
+                    <div class="col-6 p-1">
+                        <img src="{{art_photo.src}}" alt="art" class="img-fluid">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}

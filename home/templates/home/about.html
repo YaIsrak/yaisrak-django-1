@@ -1,11 +1,66 @@
 {% extends 'main.html' %}
 
 {% block title %} | About{% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="../../../static/about_css/about.css">
+{% endblock %}
 
 {% block content %}
-<section>
+<header>
     <div class="container">
-        <h1>About</h1>
+        <div class="row">
+            <div class="col-md-6"></div>
+            <div class="col-md-6 info">
+                <div class="intro text-white">
+                    <h1>MD Yaser Arafat Israk</h1>
+                    <p>
+                        I am Israk. I am an illustrator, concept artist, creative designer located in Chittagong, Bangladesh. 🇧🇩
+                        <br><br>
+                        I like to draw dynamic and traditional characters, which is sometimes gives me more inspiration. I begin pursuing art more seriously at 16. I enjoy learning new things.My force is drawing female characters, traditional concept art and portrait.
+                        <br><br>
+                        I am also a web and graphic designer. I started work at web designing at 15.
+                        <br><br>
+                    </p>
+                    <button class="btn btn-dark">
+                        <a href="" class="link-light">Mail me</a>
+                    </button>
+                    {% for socl in socls %}
+                    <button class="btn btn-dark">
+                        <a href="" class="link-light">
+                            <i class="{{socl.icon}}"></i>
+                        </a>
+                    </button>
+                    {% endfor %}
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- section 1 -->
+<section class="sec-02 bg-white">
+    <div class="container">
+        <h1 class="text-center">Skills</h1>
+        <div class="row">
+            <h2>Softwer Skills</h2>
+            {% for soft_skill in soft_skills %}
+            <div class="col-2">
+                <img src="{{soft_skill.path}}" alt="icon" class="img-fluid">
+                <p class="text-center">{{soft_skill.name}}</p>
+            </div>
+            {% endfor %}
+        </div>
+        <div class="row">
+            <h2>Programing Skills</h2>
+            {% for prog_skill in prog_skills %}
+            <div class="col-2">
+                <img src="{{prog_skill.path}}" alt="icon" class="img-fluid">
+                <p class="text-center">{{prog_skill.name}}</p>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </section>
 {% endblock %}

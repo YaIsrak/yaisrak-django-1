@@ -4,6 +4,26 @@ header, section{
     padding: 15vmin;
 }
 
+.center{
+    @include position(relative, 50%, 0%, -50%, -0%);
+}
+.link-hover{
+    position: relative;
+    left: 0px;
+    transition: $transition;
+    &:hover{
+        left: 25px;
+    }
+}
+.header_title{
+    letter-spacing: normal;
+    transition: $transition;
+    &:hover{
+        letter-spacing: 1rem;
+    }
+}
+
+// Main css
 .sec-01{
     background-image: url(../photos/cover-1.jpg);
     background-position: center;
@@ -32,4 +52,14 @@ header, section{
         }
     }
     
+}
+
+.sec-02{
+    img{
+        border-radius: 1rem;
+        transition: $transition;
+        &:hover{
+            border-radius: 5rem;
+        }
+    }
 }
